@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet meaningful matches with RishtaSutra. Discover profiles, set your preferences and take the next step towards a lifelong partnership.">
+  <meta name="theme-color" content="#7f1836">
+  <title>RishtaSutra — Find Your Perfect Life Partner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> A thoughtful beginning to your forever story <span class="announcement-separator">✦</span> <a href="#plans">Explore memberships</a></div>
+
+  <section class="home-top-community" id="homeTopCommunity">
+    <div class="home-top-heading"><span class="eyebrow-line"></span><span>COMMUNITY & SPONSORS</span></div>
+    <div class="home-top-columns">
+      <section class="home-top-events" aria-labelledby="homeTopEventsTitle"><div class="home-top-title"><h2 id="homeTopEventsTitle">Community <em>Events</em></h2><a href="#homeTopEventsTitle">View all</a></div><div id="publicEvents" class="public-event-grid"><p class="event-empty">Events added by the administrator will appear here.</p></div></section>
+      <section class="home-top-sponsors" aria-labelledby="homeTopSponsorsTitle"><div class="home-top-title"><h2 id="homeTopSponsorsTitle">Sponsored <em>Placements</em></h2></div><div id="homeTopAds" class="home-top-ad-grid"><p class="event-empty">Sponsored placements added by the administrator will appear here.</p></div></section>
+    </div>
+  </section>
+
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="RishtaSutra home">
+      <span class="brand-mark"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M22 36C18 31 7 25 7 16.5 7 8 17 5 22 13c5-8 15-5 15 3.5C37 25 26 31 22 36Z" fill="none" stroke="currentColor" stroke-width="2.3"/><path d="M22 13v23M14 21c3 0 5 2 8 5 3-3 5-5 8-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+      <span class="brand-name">rishta<span>sutra</span><small>MEANINGFUL CONNECTIONS</small></span>
+    </a>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#profiles" class="nav-link">Search Profiles</a>
+      <a href="#how-it-works" class="nav-link">How It Works</a>
+      <a href="#plans" class="nav-link">Membership</a>
+      <a href="#events" class="nav-link">Events</a><a href="#help" class="nav-link">Help</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn btn-ghost" data-open-auth="login">Log in</button>
+      <button class="btn btn-primary btn-small" data-open-auth="register">Create account <span>↗</span></button><button class="btn btn-ghost btn-small" id="portalOpenBtn">My Portal</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-pattern"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> YOUR STORY. YOUR WAY.</div>
+        <h1>Somewhere, your<br> <em>someone</em> is waiting.</h1>
+        <p class="hero-description">Meet people who share your values, understand your dreams, and are ready to build a future together.</p>
+        <div class="hero-trust-row">
+          <div class="avatar-stack" aria-hidden="true"><span>R</span><span>A</span><span>S</span><span>+</span></div>
+          <div><strong>A more thoughtful way to meet</strong><small>Privacy-first profiles · Preferences that matter</small></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative illustration of two people meeting">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="sun-disc"></div>
+        <div class="arch arch-back"></div><div class="arch arch-front"></div>
+        <div class="person person-left"><div class="person-head"></div><div class="person-hair"></div><div class="person-body"></div><div class="person-arm"></div></div>
+        <div class="person person-right"><div class="person-head"></div><div class="person-hair"></div><div class="person-body"></div><div class="person-arm"></div></div>
+        <div class="art-flower flower-one">✿</div><div class="art-flower flower-two">✦</div><div class="art-flower flower-three">✿</div>
+        <div class="floating-note note-top"><span class="note-icon">♡</span><span><b>Shared values</b><small>Start with what matters</small></span></div>
+        <div class="floating-note note-bottom"><span class="note-icon note-icon-gold">✦</span><span><b>Made for meaningful</b><small>connections</small></span></div>
+      </div>
+      <div class="hero-search-wrap">
+        <div class="search-heading"><div><span class="mini-label">BEGIN YOUR SEARCH</span><h2>Who would you like to meet?</h2></div><span class="search-sparkle">✧</span></div>
+        <form id="heroSearch" class="hero-search">
+          <label>I'm looking for<select id="searchGender"><option value="Bride">Bride</option><option value="Groom">Groom</option><option value="Any">Anyone</option></select></label>
+          <label>Age range<div class="inline-selects"><select id="ageMin"><option>21</option><option>18</option><option>22</option><option>25</option><option>28</option><option>30</option></select><span>to</span><select id="ageMax"><option>30</option><option>25</option><option>28</option><option>32</option><option>35</option><option>40</option></select></div></label>
+          <label>Location<select id="searchLocation"><option value="All">Any location</option><option>Mumbai</option><option>Pune</option><option>Bengaluru</option><option>Delhi</option><option>Hyderabad</option><option>Abroad</option></select></label>
+          <button class="btn btn-primary search-submit" type="submit">Find matches <span>↗</span></button>
+        </form>
+        <div class="search-footnote"><span>✓</span> Your preferences stay in your control</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="trust-item"><span class="trust-icon">◇</span><span><b>Privacy by choice</b><small>You control what you share</small></span></div>
+      <div class="trust-divider"></div>
+      <div class="trust-item"><span class="trust-icon">♡</span><span><b>Values-led discovery</b><small>Search on what matters to you</small></span></div>
+      <div class="trust-divider"></div>
+      <div class="trust-item"><span class="trust-icon">✧</span><span><b>People-first experience</b><small>Respectful connections, always</small></span></div>
+    </section>
+
+    <section class="section profiles-section" id="profiles">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> A GOOD PLACE TO BEGIN</div><h2>Meet a few <em>possibilities.</em></h2><p>Explore sample profiles and discover the qualities that feel right for you.</p></div>
+        <a class="text-link" href="#all-profiles">Explore all profiles <span>↗</span></a>
+      </div>
+      <div class="filter-toolbar" id="all-profiles">
+        <div class="filter-intro"><span class="filter-icon">⌕</span><span><b>Find your kind of person</b><small>Adjust the filters to explore</small></span></div>
+        <label class="filter-field">Community<select id="communityFilter"><option value="All">All communities</option><option>Hindu</option><option>Jain</option><option>Christian</option><option>Muslim</option><option>Sikh</option></select></label>
+        <label class="filter-field">Education<select id="educationFilter"><option value="All">Any education</option><option>Postgraduate</option><option>Graduate</option><option>Professional</option></select></label>
+        <label class="filter-field">Sort by<select id="sortFilter"><option value="recent">Recently joined</option><option value="ageAsc">Age: low to high</option><option value="ageDesc">Age: high to low</option></select></label>
+        <button class="filter-reset" id="resetFilters">Reset</button>
+      </div>
+      <div class="results-line"><span id="resultsCount">6 sample profiles</span><span class="demo-note"><span class="demo-dot"></span> Sample data for demonstration</span></div>
+      <div class="profile-grid" id="profileGrid"></div>
+      <div class="center-action"><button class="btn btn-outline" id="showMoreBtn">View more profiles <span>↓</span></button></div>
+    </section>
+
+    <section class="story-banner">
+      <div class="story-decoration">❋</div>
+      <div class="story-content"><span class="mini-label light-label">A BETTER WAY TO BEGIN</span><h2>Not just a profile.<br><em>A person, a story, a future.</em></h2><p>Start with curiosity. Keep your boundaries. Let a meaningful connection grow at its own pace.</p><a class="btn btn-light" href="#how-it-works">Discover how it works <span>↗</span></a></div>
+      <div class="story-side-art"><div class="story-ring ring-a"></div><div class="story-ring ring-b"></div><div class="story-heart">♡</div><span class="story-star star-a">✦</span><span class="story-star star-b">✧</span></div>
+    </section>
+
+    <section class="section how-section" id="how-it-works">
+      <div class="section-heading centered-heading"><div><div class="eyebrow centered-eyebrow"><span class="eyebrow-line"></span> SIMPLE BY DESIGN <span class="eyebrow-line"></span></div><h2>Your next chapter, <em>in three steps.</em></h2><p>A thoughtful process that keeps you in control at every step.</p></div></div>
+      <div class="steps-grid">
+        <article class="step-card"><div class="step-number">01</div><div class="step-illustration step-profile"><span class="ill-circle">♙</span><span class="ill-spark">✦</span><span class="ill-line"></span></div><h3>Create your story</h3><p>Share your interests, aspirations and the details you're comfortable making visible.</p></article>
+        <article class="step-card"><div class="step-number">02</div><div class="step-illustration step-search"><span class="ill-circle">⌕</span><span class="ill-tag">Your preferences</span><span class="ill-spark">✧</span></div><h3>Discover your matches</h3><p>Use clear preferences to explore profiles that fit what you're looking for.</p></article>
+        <article class="step-card"><div class="step-number">03</div><div class="step-illustration step-connect"><span class="ill-heart">♡</span><span class="ill-person">●</span><span class="ill-person person-small">●</span><span class="ill-spark">✦</span></div><h3>Connect with care</h3><p>Express interest, respect boundaries and connect when both people are ready.</p></article>
+      </div>
+    </section>
+
+    <section class="values-section">
+      <div class="values-art"><div class="values-circle"><span class="values-heart">♡</span><span class="values-flower">✿</span><span class="values-star">✧</span></div><div class="values-caption">MEANING OVER MATCH COUNTS</div></div>
+      <div class="values-copy"><div class="eyebrow"><span class="eyebrow-line"></span> BUILT AROUND YOU</div><h2>Because trust is<br><em>part of the match.</em></h2><p class="values-intro">Finding a partner is personal. Your experience should feel considered, respectful and yours to shape.</p>
+        <div class="value-list"><div class="value-row"><span class="value-check">✓</span><div><b>Your privacy, your choice</b><p>Keep contact details private and choose which profile fields others can see.</p></div></div><div class="value-row"><span class="value-check">✓</span><div><b>Clear, honest profiles</b><p>Report suspicious behaviour and look for verification only when it has actually been completed.</p></div></div><div class="value-row"><span class="value-check">✓</span><div><b>Preferences without promises</b><p>Explore user-selected preferences without unrealistic compatibility or marriage guarantees.</p></div></div></div>
+        <a href="#help" class="text-link">Our approach to trust <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="section plans-section" id="plans">
+      <div class="section-heading centered-heading"><div><div class="eyebrow centered-eyebrow"><span class="eyebrow-line"></span> MEMBERSHIP OPTIONS <span class="eyebrow-line"></span></div><h2>Choose how you <em>connect.</em></h2><p>Start free, then upgrade when you want more ways to connect.</p></div></div>
+      <div class="plans-grid">
+        <article class="plan-card"><div class="plan-top"><span class="plan-label">A gentle beginning</span><span class="plan-symbol">♡</span></div><h3>Free</h3><p class="plan-description">Discover the experience at your own pace.</p><div class="plan-price">₹0 <span>/ forever</span></div><ul class="plan-features"><li>✓ Create your profile</li><li>✓ Browse sample profiles</li><li>✓ Basic search filters</li><li>✓ Limited interest requests</li><li>✓ Privacy controls</li></ul><button class="btn btn-outline plan-btn" data-plan="Free">Get started free</button></article>
+        <article class="plan-card plan-featured"><div class="popular-ribbon">MOST POPULAR</div><div class="plan-top"><span class="plan-label">More ways to connect</span><span class="plan-symbol">✦</span></div><h3>Premium</h3><p class="plan-description">For members ready to explore further.</p><div class="plan-price">₹999 <span>/ 3 months</span></div><ul class="plan-features"><li>✓ Higher interest allowance</li><li>✓ Advanced search filters</li><li>✓ See who expressed interest</li><li>✓ Premium messaging access</li><li>✓ Expanded shortlist</li></ul><button class="btn btn-primary plan-btn" data-plan="Premium">Choose Premium <span>↗</span></button><small class="plan-fineprint">Illustrative pricing · payment not enabled</small></article>
+        <article class="plan-card"><div class="plan-top"><span class="plan-label">A more guided journey</span><span class="plan-symbol">✧</span></div><h3>VIP</h3><p class="plan-description">Extra tools and priority assistance.</p><div class="plan-price">₹1,999 <span>/ 6 months</span></div><ul class="plan-features"><li>✓ Applicable Premium features</li><li>✓ Higher usage limits</li><li>✓ Priority customer support</li><li>✓ Opt-in profile visibility boost</li><li>✓ Additional matchmaking tools</li></ul><button class="btn btn-outline plan-btn" data-plan="VIP">Choose VIP <span>↗</span></button><small class="plan-fineprint">Illustrative pricing · payment not enabled</small></article>
+      </div>
+      <p class="plans-disclaimer">Prices and features are illustrative demo content. Taxes, renewal terms, actual limits, payment processing and refund rules must be configured and disclosed before a live launch. No plan guarantees a match or response.</p>
+    </section>
+
+    <section class="faq-section" id="help">
+      <div class="faq-side"><div class="eyebrow"><span class="eyebrow-line"></span> NEED A LITTLE CLARITY?</div><h2>Good questions<br>deserve <em>good answers.</em></h2><p>We want you to feel confident about every step. Here are a few things members often ask.</p><a class="text-link" href="mailto:hello@rishtasutra.example">Contact our team <span>↗</span></a></div>
+      <div class="faq-list">
+        <details open><summary>Is RishtaSutra free to join?<span class="faq-plus">+</span></summary><p>This demo shows a free plan and optional paid memberships. Actual plans and paid features must be enabled through a secure backend before launch.</p></details>
+        <details><summary>Who can see my contact details?<span class="faq-plus">+</span></summary><p>Contact details should remain private by default. A production service should only share them with your explicit consent and according to your privacy settings.</p></details>
+        <details><summary>Are the profiles on this page real?<span class="faq-plus">+</span></summary><p>No. All profiles on this demonstration website are fictional sample data and are labelled for demonstration. They do not represent actual members.</p></details>
+        <details><summary>How do I report or block a profile?<span class="faq-plus">+</span></summary><p>Use the report or block control on a profile card. This front-end demo stores the action only in your current browser; a live service needs server-side review and enforcement.</p></details>
+        <details><summary>Does a paid plan guarantee a match?<span class="faq-plus">+</span></summary><p>No. Membership can provide additional tools, but it cannot guarantee compatibility, a response, an engagement or marriage.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><div class="footer-brand-col"><a class="brand brand-footer" href="#home"><span class="brand-mark"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M22 36C18 31 7 25 7 16.5 7 8 17 5 22 13c5-8 15-5 15 3.5C37 25 26 31 22 36Z" fill="none" stroke="currentColor" stroke-width="2.3"/><path d="M22 13v23M14 21c3 0 5 2 8 5 3-3 5-5 8-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="brand-name">rishta<span>sutra</span><small>MEANINGFUL CONNECTIONS</small></span></a><p>A more thoughtful beginning to your forever story. Meet with care, connect with respect.</p><div class="social-links"><a href="#home" aria-label="Instagram">ig</a><a href="#home" aria-label="Facebook">f</a><a href="#home" aria-label="LinkedIn">in</a></div></div>
+      <div class="footer-col"><h4>Explore</h4><a href="#profiles">Search Profiles</a><a href="#how-it-works">How It Works</a><a href="#plans">Membership Plans</a><a href="#help">Help Centre</a></div>
+      <div class="footer-col"><h4>Our Company</h4><a href="#about" data-static-page="About Us">About Us</a><a href="#help" data-static-page="Contact">Contact</a><a href="#help" data-static-page="Careers">Careers</a><a href="#help" data-static-page="Partner with us">Partner with us</a></div>
+      <div class="footer-col"><h4>Trust & Safety</h4><a href="#help" data-static-page="Privacy Policy">Privacy Policy</a><a href="#help" data-static-page="Terms & Conditions">Terms & Conditions</a><a href="#help" data-static-page="Refund Policy">Refund Policy</a><a href="#help" data-static-page="Grievance Contact">Grievance Contact</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> RishtaSutra. Original demo brand.</span><span><span class="footer-dot"></span> Sample website · Not yet accepting members</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+
+
+  <section class="section portal-section" id="portalSection" hidden>
+    <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> MEMBER SPACE</div><h2>My <em>RishtaSutra Portal</em></h2><p>Manage your biodata, explore member profiles, and see community events.</p></div><button class="btn btn-outline" id="portalLogout">Log out</button></div>
+    <div class="portal-welcome" id="portalWelcome"></div>
+    <div class="portal-grid">
+      <article class="portal-card"><h3>My biodata</h3><p>Add your details and attach a biodata file (PDF, DOC or DOCX).</p>
+        <form id="biodataForm" class="portal-form">
+          <label>Full name<input name="fullName" required maxlength="100"></label>
+          <label>Age<input name="age" type="number" min="18" max="100" required></label>
+          <label>Gender<select name="gender"><option>Prefer not to say</option><option>Bride</option><option>Groom</option></select></label>
+          <label>Education<input name="education" maxlength="120"></label>
+          <label>City<input name="city" maxlength="100"></label>
+          <label>About me<textarea name="about" rows="3" maxlength="1200"></textarea></label>
+          <label>Biodata file<input name="biodataFile" type="file" accept=".pdf,.doc,.docx"></label>
+          <button class="btn btn-primary" type="submit">Save biodata</button>
+        </form><div id="biodataStatus" class="portal-status"></div>
+      </article>
+      <article class="portal-card"><h3>Member directory</h3><p>Demo users can view or download up to two member biodata records. Paid access is displayed as a demo feature; real payments must be configured before launch.</p>
+        <div class="quota-meter"><span id="quotaText">2 free views/downloads remaining</span><div><i id="quotaBar"></i></div></div>
+        <div id="memberDirectory" class="member-directory"></div>
+      </article>
+    </div>
+    <div class="portal-grid">
+      <article class="portal-card"><h3>Community events</h3><p>Recently completed and upcoming events published by the admin.</p><div id="portalEvents" class="event-list"></div></article>
+      <article class="portal-card"><h3>Sponsored placements</h3><p>Brand advertisements approved by the admin may appear in the page rails and here.</p><div id="portalAds" class="ad-list"></div></article>
+    </div>
+  </section>
+  <aside class="ad-rail ad-rail-left" id="adRailLeft" aria-label="Sponsored advertisements"></aside>
+  <aside class="ad-rail ad-rail-right" id="adRailRight" aria-label="Sponsored advertisements"></aside>
+  <div class="admin-backdrop" id="adminModal" hidden>
+    <section class="admin-panel">
+      <div class="admin-heading"><div><span class="mini-label">SITE MANAGEMENT</span><h2>Administrator panel</h2></div><button class="modal-close" id="adminClose" aria-label="Close admin panel">×</button></div>
+      <p class="admin-warning">Demo administration: content is stored in this browser only. Use a secure server/database before inviting real users.</p>
+      <div class="admin-tabs"><button class="active" data-admin-tab="events">Events</button><button data-admin-tab="ads">Advertisements</button><button data-admin-tab="members">Members</button></div>
+      <div id="adminEventsPane">
+        <form id="eventForm" class="portal-form admin-form"><label>Event title<input name="title" required maxlength="120"></label><label>Date<input name="date" type="date" required></label><label>Status<select name="status"><option>Recently completed</option><option>Upcoming</option></select></label><label>Description<textarea name="description" rows="3" required maxlength="1200"></textarea></label><label>Event image<input name="image" type="file" accept="image/*" required></label><button class="btn btn-primary">Publish event</button></form><div id="adminEventList" class="admin-list"></div>
+      </div>
+      <div id="adminAdsPane" hidden>
+        <form id="adForm" class="portal-form admin-form"><label>Brand / advertiser<input name="brand" required maxlength="100"></label><label>Ad description<input name="description" required maxlength="180"></label><label>Destination URL<input name="url" type="url" placeholder="https://example.com" required></label><label>Placement<select name="placement"><option value="all">Top + left + right</option><option value="left">Left rail</option><option value="right">Right rail</option><option value="top">Top banner</option></select></label><label>Banner image<input name="image" type="file" accept="image/*" required></label><label><input name="active" type="checkbox" checked> Publish ad immediately</label><button class="btn btn-primary">Save advertisement</button></form><div id="adminAdList" class="admin-list"></div>
+      </div>
+      <div id="adminMembersPane" hidden><div id="adminMemberList" class="admin-list"></div></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="modal-backdrop" id="authModal" aria-hidden="true">
+    <section class="modal auth-modal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <button class="modal-close" data-close-modal aria-label="Close dialog">×</button>
+      <div class="modal-brand"><span class="brand-mark"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M22 36C18 31 7 25 7 16.5 7 8 17 5 22 13c5-8 15-5 15 3.5C37 25 26 31 22 36Z" fill="none" stroke="currentColor" stroke-width="2.3"/></svg></span></div>
+      <span class="mini-label">YOUR NEXT CHAPTER STARTS HERE</span><h2 id="authTitle">Welcome to RishtaSutra</h2><p class="modal-intro">This is a front-end preview. Do not enter a real password or personal information.</p>
+      <div class="auth-tabs"><button class="auth-tab active" data-auth-tab="register">Create account</button><button class="auth-tab" data-auth-tab="login">Log in</button></div>
+      <form id="authForm">
+        <div id="registerFields">
+          <label class="form-label">Full name<input type="text" id="authName" placeholder="Your full name" autocomplete="name"></label>
+          <label class="form-label">I am creating a profile for<select id="authCreator"><option>Myself</option><option>My son</option><option>My daughter</option><option>A sibling</option><option>A relative</option><option>A friend</option></select></label>
+        </div>
+        <label class="form-label">Email address<input type="email" id="authEmail" placeholder="you@example.com" autocomplete="email" required></label>
+        <label class="form-label">Password<input type="password" id="authPassword" placeholder="Demo only — do not use a real password" minlength="8" autocomplete="off" required></label>
+        <label class="consent-row" id="consentRow"><input type="checkbox" id="authConsent"><span>I agree to the demo <a href="#help">Terms</a> and <a href="#help">Privacy Policy</a>.</span></label>
+        <button class="btn btn-primary modal-submit" type="submit" id="authSubmit">Create demo profile <span>↗</span></button>
+      </form>
+      <p class="modal-disclaimer">Demo only: no account, OTP, email verification or secure authentication is created.</p>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="profileModal" aria-hidden="true"><section class="modal profile-modal" role="dialog" aria-modal="true" aria-labelledby="profileModalTitle"><button class="modal-close" data-close-modal aria-label="Close dialog">×</button><div id="profileModalContent"></div></section></div>
+  <div class="modal-backdrop" id="infoModal" aria-hidden="true"><section class="modal info-modal" role="dialog" aria-modal="true" aria-labelledby="infoModalTitle"><button class="modal-close" data-close-modal aria-label="Close dialog">×</button><span class="mini-label">RISHTASUTRA</span><h2 id="infoModalTitle">Information</h2><p id="infoModalText"></p><button class="btn btn-primary" data-close-modal>Got it</button></section></div>
+
+  <script src="script.js"></script>\n  <script src="portal.js"></script>
+</body>
+</html>
